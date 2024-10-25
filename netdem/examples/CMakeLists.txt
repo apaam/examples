@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 3.13)
+get_filename_component(PROJECT_SUB_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
+project(${PROJECT_BASE_NAME}_${PROJECT_SUB_NAME})
+
+set(PROJECT_EXAMPLE_BASE_NAME ${PROJECT_BASE_NAME}_example)
+
+add_subdirectory(00_random_packing)
+add_subdirectory(01_odemetric_comp)
+add_subdirectory(02_triaxial_comp)
+add_subdirectory(03_angle_repose)
+add_subdirectory(04_blade_mixing)
+add_subdirectory(05_rotate_drum)
+add_subdirectory(06_funnel_pack)
+
+add_subdirectory(90_polybezier_model)
+add_subdirectory(91_gjk_erosion_issue)
+add_subdirectory(92_potential_models)
+add_subdirectory(93_netdem)
+add_subdirectory(94_deformable_particle)
+add_subdirectory(95_contact_mechanics)
+add_subdirectory(96_sdf_dem)
+add_subdirectory(98_landslide)
+add_subdirectory(99_shape_netsdf)
